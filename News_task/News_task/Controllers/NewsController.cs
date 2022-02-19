@@ -38,7 +38,7 @@ namespace News_task.Controllers
         public ActionResult Edit(int id)
         {
             NewsDBEntities1 db=new NewsDBEntities1();
-            var news = (from n in db.News where n.Id == n.Id select n).FirstOrDefault();
+            var news = (from n in db.News where n.Id == id select n).FirstOrDefault();
             return View(news);
         }
 
