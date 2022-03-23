@@ -1,0 +1,13 @@
+﻿@model Assignment.Models.DB.Department
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="/Department/Edit" method="post">
+    <input type="text" name="Id" class="form-control" value="@Model.Id" hidden>
+    <input type="text" name="Name" class="form-control" value="@Model.Name">
+    <input type="submit" style="color:red" value="Edit" />
+
+</form>

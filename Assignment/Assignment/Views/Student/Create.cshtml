@@ -1,0 +1,13 @@
+﻿@model Assignment.Models.DB.Student
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="/Student/Create" method="post">
+    <input type="text" name="Name" class="form-control" placeholder="Name">
+    <input type="text" name="Did" class="form-control" placeholder="Department Id">
+    <input type="submit" style="color:red" value="Add" />
+
+</form>

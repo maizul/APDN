@@ -1,0 +1,29 @@
+﻿@model List<Assignment.Models.DB.Department>
+@{
+    ViewBag.Title = "DepartmentList";
+}
+
+<h2>DepartmentList</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th> ID</th>
+        <th> Name</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var p in Model)
+    {
+<tr>
+    <td> @p.Id</td>
+    <td>@p.Name</td>
+
+    <td><a href="/Department/Edit/@p.Id">Edit</a></td>
+    <td><a href="/Department/Delete/@p.Id">Edit</a></td>
+</tr>
+
+
+    }
+
+
+</table>
